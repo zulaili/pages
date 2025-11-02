@@ -44,5 +44,9 @@
       }
     }
   },
-  "servers": []
+  "servers": [
+    {
+      "url": "https://zulaili.com/"
+    }
+  ]
 }
