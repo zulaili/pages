@@ -1,0 +1,48 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Pages API",
+    "version": "1.0.0",
+    "description": ""
+  },
+  "paths": {
+    "/api/hello": {
+      "get": {
+        "operationId": "config_api_hello",
+        "summary": "Hello",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HelloResponse"
+                }
+              }
+            }
+          }
+        },
+        "description": "Demo endpoint showing Django Ninja integration."
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HelloResponse": {
+        "properties": {
+          "message": {
+            "title": "Message",
+            "type": "string"
+          }
+        },
+        "required": [
+          "message"
+        ],
+        "title": "HelloResponse",
+        "type": "object"
+      }
+    }
+  },
+  "servers": []
+}
